@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Da 2', cursive;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+header img {
+  width: 250;
+  length: 350;
+}
+
+#experience img {
+  width: 150;
+  length: 250;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Fonts and Colors */
+.header{
+  background: linear-gradient(-45deg, #44CFCB, #122CD2);
+  color: white;
+}
+
+.header {
+  background: url("https://cdn.pixabay.com/photo/2020/07/15/19/50/parachute-5408876_1280.jpg");
+  background-position: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+
+
+a {
+  color: inherit;
+  text-decoration:none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+#skills {
+  background: linear-gradient(-45deg, #44CFCB, #122CD2);
+  color: white;
+}
+
+
+#skills {
+  background: url("https://cdn.pixabay.com/photo/2020/07/15/19/50/parachute-5408876_1280.jpg");
+  background-position: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+
+
+.checked-star {
+  color: #44CFCB;
+}
+
+.half-star {
+  position: relative;
+  color: white;
+}
+
+.checked-half-star {
+  position: absolute;
+  color: #44CFCB;
+  top: 0px;
+  width: 7px;
+  overflow: hidden;
+  }
+
+.date {
+  color: #44CFCB;
+  font-size: 21px;
+  font-weight: 400;
+  margin: auto;
+}
+
+.job-title {
+  font-size: 21px;
+  font-weight: strong;
+  margin: auto;
+  flex: 3;
+}
+
+.company-name {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 auto;
+  flex: 1;
+}
+
+footer {
+  background-color: #323232;
+  color: white;
+}
+
+li > a {
+  font-size: 12px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+/*Margin / Padding*/
+
+header, footer, section {
+  padding: 45px;
+  margin: 0;
+}
+
+
+#skills h5 {
+  margin: 25px;
+}
+
+.checked-star {
+  padding-left: 50px;
+  text-align: center;
+}
+
+.company-details p {
+  text-align: justify;
+  padding-left: 13px;
+}
+
+.company-name {
+  text-align: right;
+  padding-right: 13px;
+  padding-left: 15px;
+}
+
+.company-details img {
+  text-align: right;
+  margin-left: 27px;
+}
+
+.experience-entry {
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.artistandbutton {
+  margin-top: 15px;
+}
+
+.artistcontact {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.copyright {
+  margin-top: 30px;
+  text-align: right;
+  padding: 0px;
+
+}
+
+.contactlink {
+  margin-top: 40px;
+}
+
+.contacticon {
+  margin-left: 37px;
+}
+
+.contacticon img {
+  margin-right: 5px;
+}
+
+/*Layout & Flexbox*/
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgchange {
+  position: relative;
+}
+
+.imgtop {
+  position: absolute;
+  left: 0;
+  animation-name: imgfadeinout;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+nav {
+  padding-top: 50px;
+  word-spacing: 10px;
+}
+
+nav a {
+  transition: font-size 0.5s ease-in, color 0.3s linear;;
+}
+
+.name-container h1 {
+  height: 30px;
+}
+
+.name-container h3 {
+  font-weight: 50px;
+}
+
+.skillstar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#skills div{
+  display: flex;
+  align-items: center;
+}
+
+.company-date-job {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.date {
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.artistcontact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h2 {
+  height: 25px;
+}
+
+footer h3 {
+  font-weight: 50px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  text-align: left;
+}
+
+
+#dwldCV {
+  background-color: #44CFCB;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 18px;
+  margin-top: 20px;
+  transition: width 4s;
+  cursor: pointer;
+}
+
+/* Pseudo Selectors */
+nav a:hover {
+  color: #44CFCB;
+  font-size: 20px;
+}
+
+.imgtop:hover {
+  animation-play-state: paused;
+  cursor: grab;
+}
+
+::selection {
+  color: white;
+  background: #44CFCB;
+}
+
+footer ul a:hover {
+  color: #44CFCB;
+}
+
+/* Animations */
+@keyframes background-color {
+  100% {background-color: #FFFFFF;}
+}
+
+@keyframes imgfadeinout {
+  0% {opacity: 1;}
+  45% {opacity: 1;}
+  55% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  #dwldCV:hover {
+    width:100%;
+    animation-name: background-color;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: #44CFCB;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header, footer, section {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .header{
+    background: linear-gradient(-45deg, #44CFCB, #122CD2);
+    color: white;
+  }
+
+  .name-container {
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  p {
+    font-size: 21px;
+    width: 100%;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  #About > h3 {
+    margin-top: 0px;
+  }
+
+  #skills {
+    background: linear-gradient(-45deg, #44CFCB, #122CD2);
+    color: white;
+  }
+
+  .skillstar {
+    flex-direction: column;
+  }
+
+  .company-date-job {
+    display: initial;
+  }
+
+  .company-details > img {
+    display: none;
+  }
+
+  .experience-entry {
+    padding-left: 0;
+  }
+
+  .company-details > p, h3.company-name {
+    padding: 0;
+  }
+
+  .company-name, .job-title, .date {
+    text-align: left;
+  }
+
+  .artistcontact {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .contactlink > ul {
+    display: none;
+  }
+
+  .contacticon {
+    padding: 0;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  button {
+    margin-left: 40px;
+  }
+}
