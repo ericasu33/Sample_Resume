@@ -341,6 +341,10 @@ footer ul a:hover {
     animation-fill-mode: forwards;
     color: #44CFCB;
   }
+
+  .dropdownbtn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -360,15 +364,22 @@ footer ul a:hover {
 
   }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-size: 21px;
-    margin-top: 0;
-    padding-top: 0;
+  .dropdown {
+    width: 4rem;
+    margin: 0 auto;
+  }
+
+  .dropdownbtn {
+    display: block;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+
+  nav, .bar {
+    display: none;
   }
 
   p {
@@ -442,4 +453,22 @@ footer ul a:hover {
   button {
     margin-left: 40px;
   }
+
+  .dropdownbtn:hover {
+    width: 2.5rem;
+    border-color: #FFF;
+    background-color: #44CFCB;
+    }
+
+  .dropdown:hover nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 0;
+    }
+
 }
