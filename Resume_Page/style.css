@@ -257,6 +257,8 @@ nav a {
 .company-date-job {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+
 }
 
 .company-details {
@@ -422,6 +424,7 @@ footer ul a:hover {
 
   .company-details > p, h3.company-name {
     padding: 0;
+    text-align: left;
   }
 
   .company-name, .job-title, .date {
@@ -454,18 +457,17 @@ footer ul a:hover {
     margin-left: 40px;
   }
 
-  .dropdownbtn:hover {
-    width: 2.5rem;
+  .dropdowncolor {
     border-color: #FFF;
     background-color: #44CFCB;
     }
 
-  .dropdown:hover nav {
+  .navshow {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     margin-top: 0.5rem;
     padding-top: 0;
